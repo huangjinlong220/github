@@ -1,0 +1,10 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: 123
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost/test_demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
