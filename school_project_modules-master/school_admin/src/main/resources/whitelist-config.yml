@@ -1,0 +1,13 @@
+whitelist:
+  - /login/**
+  - /auth/**
+  - /v2/**
+  - /swagger-resources/**
+  - /swagger-ui/**
+  - /webjars/**
+  - /favicon.ico
+  - /doc.html
+  - /service-worker.js
+  - /images/**
+  - /common/**
+  - /book/ai/stream

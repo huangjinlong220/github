@@ -1,0 +1,49 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: school_project
+  datasource:
+    url: jdbc:mysql://localhost:13306/test_demo?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    database: 1
+    host: 127.0.0.1
+    port: 6379
+    timeout: 10s
+    lettuce:
+      pool:
+        max-active: 200
+        max-wait: -1ms
+        max-idle: 10
+        min-idle: 0
+  config:
+    import:
+      - classpath:satoken-config.yml
+      - classpath:swagger-config.yml
+      - classpath:whitelist-config.yml
+      - classpath:blacklist-config.yml
+      - classpath:mail-config.yml
+      - classpath:quartz-config.yml
+      - classpath:langchain-config.yml
+      - classpath:cache-config.yml
+      - classpath:chatAi_config.yml
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+file:
+  path: "D:/images/"
+  url-prefix: "/images/"

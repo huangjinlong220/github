@@ -1,0 +1,19 @@
+langchain4j:
+  community:
+    dashscope:
+      chat-model:
+        api-key: ${aliQwen_api}
+        model-name: qwen-plus
+        base-url: https://dashscope.aliyuncs.com/api/v1
+        temperature: 0.7
+        max-tokens: 2000
+        top-p: 0.8
+        presence-penalty: 0.0
+        frequency-penalty: 0.0
+      streaming-chat-model:
+        api-key: ${aliQwen_api}
+        model-name: qwen-plus
+        base-url: https://dashscope.aliyuncs.com/api/v1
+        temperature: 0.7
+        max-tokens: 2000
+        top-p: 0.8

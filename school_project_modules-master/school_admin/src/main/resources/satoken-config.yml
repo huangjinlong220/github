@@ -1,0 +1,11 @@
+sa-token:
+  token-name: satoken
+  timeout: 2592000
+  active-timeout: -1
+  is-concurrent: true
+  is-share: true
+  token-style: uuid
+  is-log: true
+  is-read-header: true
+  is-read-body: false
+  is-read-cookie: false
